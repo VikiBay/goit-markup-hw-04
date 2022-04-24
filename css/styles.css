@@ -60,6 +60,7 @@ body{
         .btn:focus {
             background:var(--accent-color);
             color:var(--light-text-color);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
         }
             
 /* -----------------------------------------HEADER------------------------------------------------------ */
@@ -155,6 +156,8 @@ color: var(--secondtext-color);
 /* ---------------------------------------------HERO------------------------------------------- */
 .hero {
     background:var(--background-dark-color);
+    margin: 0 auto;
+    max-width: 1600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -464,7 +467,11 @@ margin-bottom: -30px;
     margin-left: var(--typical-margin);
     margin-bottom: var(--typical-margin);
     flex-basis: calc((100% - 90px) / 3);
-}
+    }
+
+.portfolio-item:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}   
 
 .portfolio-list-title {
 font-size: 18px;
@@ -491,7 +498,13 @@ color:var(--secondtext-color);
 }
  .portfolio-link{
     text-decoration:none;
+    
 } 
+
+.portfolio-link:hover{
+    background: tomato;
+    
+}
 
 .portfolio-btn-item {
 display: flex;    
