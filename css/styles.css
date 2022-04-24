@@ -42,11 +42,10 @@ body{
     }
     .container{
         width: 1200px;
-        /* border: 1px dotted black; */
+        border: 1px dotted black; 
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 auto;
-
     }
 
     .btn{
@@ -126,11 +125,39 @@ list-style: none;
 }
 
 .header-contact {
+display: flex;
+/* align-self: start; */
 color: var(--secondtext-color);
 }
+
+.header-icon{
+    fill: currentColor;
+    margin-right: 10px;
+}
+/* .header-contact::before{
+    display: inline-flex;
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-right: 10px;
+    height: 30px;
+    width: 30px;
+} */
+  /*  .header-contact-item:nth-child(1)>.header-contact::before{
+    //background-image: url("../images/envelope.svg");
+
+} 
+
+.header-contact-item:nth-child(2)>.header-contact::before{
+    background-image: url("../images/smartphone.svg");
+}  */
 /* ---------------------------------------------HERO------------------------------------------- */
 .hero {
     background:var(--background-dark-color);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 200px 0;
     }
 
@@ -189,18 +216,27 @@ margin: auto;
     margin-left: 30px;
 }
 
+.h3{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
 .advantages-list-headers{
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-text-transform: uppercase;
-margin-bottom: 10px;
+
 }
 
 .advantages-list-text{
     max-width: 270px;
 line-height: 1.71;
 color: var(--secondtext-color);
+}
+
+.advantages-icon{
+width: 270px;
+height: 120px;
+margin-bottom: var(--typical-margin);
 }
 
 .whatwedo{
@@ -228,17 +264,23 @@ letter-spacing: 0.03em;
 }
 .team-list{
     display: flex;
+    flex-basis: calc((100%-120px)/4);
 }
 
 .team-list-item {
 background: #FFFFFF;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
+max-width: 270px;
 
 }
 
 .team-list-item:not(:first-child){
 margin-left: var(--typical-margin);
+}
+
+.team-socmed-list-item:not(:first-child){
+margin-left: 10px;
 }
 
 .team-description{
@@ -261,15 +303,111 @@ margin-bottom: 10px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    color:var(--secondtext-color)
+    color:var(--secondtext-color);
+    margin-bottom: 16px;
 }
 
+.team-socmed-list{
+    display: flex;
+    padding: 0 32px;
+    margin-bottom: 30px;
+}
+
+.socmed-item{
+    display: flex;
+    height: 44px;
+    width: 44px;
+    background-position: center;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color:#AFB1B8;
+        
+}
+.team-socmed-item{
+    background-color: var(--background-main-color);
+}
+
+.socmed-icon{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+.team-socmed-item:not(:first-child) {
+margin-left: 10px;}
+
+.team-socmed-item:hover{
+    color: var(--light-text-color);
+    background-color: var(--accent-color);
+}
+/* -----------------------CLIENTS------------------------- */
+.clients-list{
+display: flex;
+}
+
+.clients-item:not(:first-child){
+margin-left: var(--typical-margin);
+}
+
+.clients-link{
+display: flex;
+width: 170px;
+height: 92px;
+border: 1px solid #AFB1B8;
+color: #AFB1B8;
+justify-content: center;
+}
+
+
+.clients-icon{
+align-self: center;    
+fill:currentColor;
+/* height: 40px; */
+}
+
+.clients-link:hover{
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.footer .container{
+    display: flex;
+}
 .footer{
     background: var(--background-dark-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    
-    }
+        }
+.footer-social{
+    margin-left: 70px;
+}
+
+.footer-social-title{
+    color: var(--light-text-color);
+    margin-bottom: 20px;
+}
+.footer-socmed-list{
+    display: flex;
+}
+
+.footer-socmed-list-item:not(:first-child){
+margin-left: 10px;
+}
+
+.footer-socmed-item{
+    background-color: rgba(255, 255, 255, 0.1);
+color: var(--light-text-color);
+}
+.footer-socmed-item:hover,
+.footer-socmed-item:focus{
+background-color: var(--accent-color);
+}
+
+.footer-socmed-icon{
+    fill: currentColor;
+/* background-color: rgba(255, 255, 255, 0.1); */
+}
+
 .footer-logo{
 font-family: 'Raleway';
 display: block;
