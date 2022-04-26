@@ -42,7 +42,7 @@ body{
     }
     .container{
         width: 1200px;
-        border: 1px dotted black; 
+        /* border: 1px dotted black;  */
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 auto;
