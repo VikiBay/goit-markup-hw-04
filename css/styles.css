@@ -64,14 +64,18 @@ body{
             
 /* -----------------------------------------HEADER------------------------------------------------------ */
 .header {
-padding-top: 32px;
-padding-bottom: 32px;
-border-bottom: 1px solid #EEEEEE;    
+max-width: 1600px;
+height:80px;
+padding-top: 24px;
+padding-bottom: 25px;
+border-bottom: 1px solid #EEEEEE;
+    
         }
         
 .header .container{
     display: flex;
     align-items: center;
+    
     }
 
 .header-nav-item:not(:last-child){
@@ -103,7 +107,8 @@ letter-spacing: 0.02em;
 
 .header-nav-link {
     color: var(--maintext-color);
-}
+    }
+
 .header-nav-link:hover, 
 .header-contact:hover,
 .header-nav-link:focus,
@@ -286,15 +291,15 @@ margin-left: 10px;
 }
 
 .team-description{
-    margin-bottom: var(--typical-margin);
+    /* margin-bottom: var(--typical-margin); */
     }
 
 .team-desctiption-text{
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 30px 32px;
+
 }
 .team-list-photo {
-    margin-bottom: var(--typical-margin);
+    /* margin-bottom: var(--typical-margin); */
 }
 
 .team-list-header{
@@ -315,7 +320,7 @@ margin-bottom: 10px;
 
 .team-socmed-list{
     display: flex;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .socmed-item{
