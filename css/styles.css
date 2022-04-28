@@ -107,7 +107,7 @@ letter-spacing: 0.02em;
 
 .header-nav-link {
     color: var(--maintext-color);
-    }
+        }
 
 .header-nav-link:hover, 
 .header-contact:hover,
@@ -131,8 +131,9 @@ list-style: none;
 
 .header-contact {
 display: flex;
-/* align-self: start; */
+align-items: center;
 color: var(--secondtext-color);
+font-weight: 500;
 }
 
 .header-icon{
